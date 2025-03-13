@@ -97,7 +97,7 @@ The project demonstrates Active Directory administration, Group Policy managemen
 
 ## Step 7: Apply GPO to the Domain
 - In **Group Policy Management Console (GPMC)**:
-  - Right-click **lab.local** → **Link an Existing GPO**.
+  - Right-click **yourcreateddomain.com** → **Link an Existing GPO**.
   - Select **Security Policy**.
   - Click **OK**.
 

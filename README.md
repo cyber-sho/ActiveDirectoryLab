@@ -70,11 +70,15 @@ The project demonstrates Active Directory administration, Group Policy managemen
 ## Step 4: Configure GPO for Security Policies
 ### 1. Open Group Policy Management
 - Run `gpedit.msc` or open **Group Policy Management Console (GPMC)**.
+<p align="justified">
+<br><img src=  "https://i.imgur.com/K2BBwy8.png"></br>
 
 ### 2. Create a New GPO for Security Policies
 - Right-click **Group Policy Objects** → **New**.
 - Name it **Security Policy**.
 - Right-click the **Security Policy GPO** → **Edit**.
+<p align="justified">
+<br><img src=  "https://i.imgur.com/3r3kUfy.png"></br>
 
 ## Step 5: Configure Password Policy
 - Navigate to:  
@@ -86,6 +90,8 @@ The project demonstrates Active Directory administration, Group Policy managemen
   - **Minimum password length:** `12 characters`
   - **Password must meet complexity requirements:** `Enabled`
   - **Store passwords using reversible encryption:** `Disabled`
+<p align="justified">
+<br><img src= "https://i.imgur.com/136fuiq.png"></p>br>
 
 ## Step 6: Configure Account Lockout Policy
 - Navigate to:  
@@ -94,12 +100,16 @@ The project demonstrates Active Directory administration, Group Policy managemen
   - **Account lockout threshold:** `5 invalid attempts`
   - **Account lockout duration:** `15 minutes`
   - **Reset account lockout counter after:** `15 minutes`
+<p align="justified">
+<br><img src= "https://i.imgur.com/J8ZIRJn.png"></p>br>
 
 ## Step 7: Apply GPO to the Domain
 - In **Group Policy Management Console (GPMC)**:
   - Right-click **yourcreateddomain.com** → **Link an Existing GPO**.
   - Select **Security Policy**.
   - Click **OK**.
+<p align="justified">
+<br><img src= "https://i.imgur.com/yZeJPiO.png"></p>br>
 
 ## Step 8: Verify the Policies
 ### 1. Run `gpupdate` to force policy updates
